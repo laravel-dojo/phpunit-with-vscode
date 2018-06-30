@@ -13,4 +13,15 @@ class Calculator
     {
         return $x - $y;
     }
+
+    public function sum(array $items)
+    {
+        $total = 0;
+
+        foreach($items as $item) {
+            $total += $item;
+        }
+
+        return $total;
+    }
 }
